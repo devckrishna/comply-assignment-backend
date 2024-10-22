@@ -1,1 +1,1 @@
-web: gunicorn app:app --timeout 500
+web: gunicorn app:app --timeout 500 --workers=3 --threads=3 --worker-connections=1000
